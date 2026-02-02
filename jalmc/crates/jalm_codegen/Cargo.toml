@@ -10,3 +10,8 @@ wasm-encoder = "0.38"
 
 [dev-dependencies]
 wasmtime = "17.0"
+criterion = "0.5"
+
+[[bench]]
+name = "codegen"
+harness = false

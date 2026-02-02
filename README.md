@@ -17,6 +17,7 @@ An LLM/agent can use the specs in this repository as a deterministic contract fo
 - `EFFECT_SYSTEM_V0.md`: Requires explicit side-effect declarations so agents can reason about purity and capabilities.
 - `STRUCTURED_CONCURRENCY_V0.md`: Defines scoped tasks and cancellation rules so agents avoid leaks or detached tasks.
 - `MODULE_SYSTEM_V0.md`: Defines layout and import/visibility rules for deterministic project structure.
+- `CODEGEN_V0.md`: Documents the current WASM codegen scope and limitations.
 
 ## Why “AI Agent Friendly” Matters
 
