@@ -118,6 +118,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "jalm_effectcheck"
+version = "0.1.0"
+dependencies = [
+ "jalm_parser",
+ "jalm_syntax",
+ "rowan",
+ "serde",
+]
+
+[[package]]
 name = "jalm_formatter"
 version = "0.1.0"
 dependencies = [
@@ -150,6 +160,7 @@ name = "jalm_tests"
 version = "0.1.0"
 dependencies = [
  "insta",
+ "jalm_effectcheck",
  "jalm_formatter",
  "jalm_parser",
  "jalm_syntax",

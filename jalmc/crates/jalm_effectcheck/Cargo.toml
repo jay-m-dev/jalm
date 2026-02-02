@@ -1,0 +1,10 @@
+[package]
+name = "jalm_effectcheck"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+jalm_parser = { path = "../jalm_parser" }
+jalm_syntax = { path = "../jalm_syntax" }
+rowan = "0.15"
+serde = { version = "1.0", features = ["derive"] }
