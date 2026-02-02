@@ -1,5 +1,6 @@
 use jalm_formatter::format_source;
 use jalm_parser::parse;
+use jalm_typecheck::check;
 use serde_json::json;
 use std::env;
 use std::fs;
@@ -7,7 +8,7 @@ use std::fs;
 fn main() {
     let mut args = env::args().skip(1).collect::<Vec<_>>();
     if args.is_empty() {
-        eprintln!("usage: jalmt <parse|fmt> <file>");
+        eprintln!("usage: jalmt <parse|fmt|check> <file>");
         std::process::exit(2);
     }
     let cmd = args.remove(0);
@@ -46,8 +47,15 @@ fn main() {
                 std::process::exit(1);
             }
         },
+        "check" => {
+            let result = check(&source);
+            let diag = json!({
+                "diagnostics": result.diagnostics,
+            });
+            println!("{}", serde_json::to_string_pretty(&diag).unwrap());
+        }
         _ => {
-            eprintln!("usage: jalmt <parse|fmt> <file>");
+            eprintln!("usage: jalmt <parse|fmt|check> <file>");
             std::process::exit(2);
         }
     }

@@ -6,4 +6,5 @@ edition = "2021"
 [dependencies]
 jalm_parser = { path = "../jalm_parser" }
 jalm_formatter = { path = "../jalm_formatter" }
+jalm_typecheck = { path = "../jalm_typecheck" }
 serde_json = "1.0"
