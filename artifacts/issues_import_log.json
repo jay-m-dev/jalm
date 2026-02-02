@@ -1,0 +1,205 @@
+[
+  {
+    "title": "Define JaLM MVP scope + success criteria",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/1",
+    "error": null
+  },
+  {
+    "title": "Pick core syntax + write JaLM grammar v0",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/2",
+    "error": null
+  },
+  {
+    "title": "Design JaLM type system v0",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/3",
+    "error": null
+  },
+  {
+    "title": "Design effect system (IO/NET/FS/TIME/RAND/FFI)",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/4",
+    "error": null
+  },
+  {
+    "title": "Define structured concurrency model",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/5",
+    "error": null
+  },
+  {
+    "title": "Define module system + project layout",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/6",
+    "error": null
+  },
+  {
+    "title": "Implement JaLM parser",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/7",
+    "error": null
+  },
+  {
+    "title": "Implement canonical formatter (jalmt fmt)",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/8",
+    "error": null
+  },
+  {
+    "title": "Implement type checker",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/9",
+    "error": null
+  },
+  {
+    "title": "Implement effect checker",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/10",
+    "error": null
+  },
+  {
+    "title": "Define JaLM MIR (mid-level IR) for WASM backend",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/11",
+    "error": null
+  },
+  {
+    "title": "Implement WASM codegen (minimum viable)",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/12",
+    "error": null
+  },
+  {
+    "title": "Build minimal JaLM runtime for WASM",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/13",
+    "error": null
+  },
+  {
+    "title": "Design host interface (WASI + custom web host ABI)",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/14",
+    "error": null
+  },
+  {
+    "title": "Implement jaLM build tool (jalmt)",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/15",
+    "error": null
+  },
+  {
+    "title": "Create JaLM standard library core: strings/bytes/collections",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/16",
+    "error": null
+  },
+  {
+    "title": "Create JaLM std: Result/Option + error conventions",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/17",
+    "error": null
+  },
+  {
+    "title": "Implement JSON support (parse/serialize)",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/18",
+    "error": null
+  },
+  {
+    "title": "Implement HTTP server library (router + handlers)",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/19",
+    "error": null
+  },
+  {
+    "title": "Implement structured concurrency primitives in std (scope/task)",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/20",
+    "error": null
+  },
+  {
+    "title": "Add logging + tracing basics",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/21",
+    "error": null
+  },
+  {
+    "title": "Create testing framework (jalmt test)",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/22",
+    "error": null
+  },
+  {
+    "title": "Create demo web app: Hello + JSON + middleware",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/23",
+    "error": null
+  },
+  {
+    "title": "Implement diagnostics + error codes spec",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/24",
+    "error": null
+  },
+  {
+    "title": "Implement language server MVP (LSP)",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/25",
+    "error": null
+  },
+  {
+    "title": "Add package manager MVP + lockfile",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/26",
+    "error": null
+  },
+  {
+    "title": "Security/sandboxing defaults for web host",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/27",
+    "error": null
+  },
+  {
+    "title": "Performance sanity checks + regression harness",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/28",
+    "error": null
+  },
+  {
+    "title": "Write JaLM MVP docs + tutorials",
+    "action": "created",
+    "issue_number": null,
+    "url": "https://github.com/jay-m-dev/jalm/issues/29",
+    "error": null
+  }
+]
