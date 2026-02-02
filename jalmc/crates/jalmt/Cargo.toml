@@ -4,7 +4,20 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-jalm_parser = { path = "../jalm_parser" }
-jalm_formatter = { path = "../jalm_formatter" }
-jalm_typecheck = { path = "../jalm_typecheck" }
+clap = { version = "4.5", features = ["derive"] }
 serde_json = "1.0"
+
+jalm_formatter = { path = "../jalm_formatter" }
+jalm_parser = { path = "../jalm_parser" }
+jalm_typecheck = { path = "../jalm_typecheck" }
+jalm_effectcheck = { path = "../jalm_effectcheck" }
+
+[dev-dependencies]
+assert_cmd = "2.0"
+predicates = "3.1"
+tempfile = "3.24"
+criterion = "0.5"
+
+[[bench]]
+name = "cli_noop"
+harness = false

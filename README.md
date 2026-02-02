@@ -21,6 +21,7 @@ An LLM/agent can use the specs in this repository as a deterministic contract fo
 - `RUNTIME_V0.md`: Documents the minimal WASM runtime ABI and memory model.
 - `HOST_ABI_V0.md`: Defines the WASI/custom host ABI split and import surface.
 - `abi/host_abi_v0.wit`: Logical WIT definition for host bindings.
+- `TOOLING_V0.md`: Documents `jalmt` commands and project layout.
 
 ## Why “AI Agent Friendly” Matters
 
