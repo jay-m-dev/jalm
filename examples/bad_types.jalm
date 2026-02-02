@@ -1,0 +1,4 @@
+// Type errors for jalmt check demo
+fn bad_return(a: i64) -> bool { a + 1 }
+
+fn use_undef() -> i64 { x }

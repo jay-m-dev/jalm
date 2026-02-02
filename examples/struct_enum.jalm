@@ -1,0 +1,14 @@
+// Struct + enum example
+struct User {
+  id: i64;
+  name: string;
+}
+
+enum MaybeId {
+  Some(i64);
+  None;
+}
+
+fn get_id(u: User) -> i64 {
+  u.id
+}

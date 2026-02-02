@@ -1,0 +1,10 @@
+// If + match example
+fn classify(x: i64) -> string {
+  if x > 0 { "pos" }
+  else {
+    match x {
+      0 => "zero",
+      _ => "neg",
+    }
+  }
+}
