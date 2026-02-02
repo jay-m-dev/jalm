@@ -19,6 +19,8 @@ An LLM/agent can use the specs in this repository as a deterministic contract fo
 - `MODULE_SYSTEM_V0.md`: Defines layout and import/visibility rules for deterministic project structure.
 - `CODEGEN_V0.md`: Documents the current WASM codegen scope and limitations.
 - `RUNTIME_V0.md`: Documents the minimal WASM runtime ABI and memory model.
+- `HOST_ABI_V0.md`: Defines the WASI/custom host ABI split and import surface.
+- `abi/host_abi_v0.wit`: Logical WIT definition for host bindings.
 
 ## Why “AI Agent Friendly” Matters
 

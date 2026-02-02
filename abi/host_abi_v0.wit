@@ -1,0 +1,54 @@
+package jalm:host@0.1.0
+
+world jalm-host {
+  import wasi:clocks/monotonic-clock;
+  import wasi:clocks/wall-clock;
+  import wasi:random/random;
+  import jalm:host/logging;
+  import jalm:host/time;
+  import jalm:host/cancel;
+  import jalm:host/http;
+  import jalm:host/net;
+}
+
+interface logging {
+  // level: 0=trace, 1=debug, 2=info, 3=warn, 4=error
+  log: func(level: u8, message: string)
+}
+
+interface time {
+  sleep-ms: func(ms: u64) -> u32
+}
+
+interface cancel {
+  cancel: func(token: u32) -> bool
+}
+
+interface http {
+  type bytes = list<u8>
+
+  record request {
+    method: string,
+    url: string,
+    headers: list<tuple<string, string>>,
+    body: bytes,
+    timeout-ms: u64,
+  }
+
+  record response {
+    status: u16,
+    headers: list<tuple<string, string>>,
+    body: bytes,
+  }
+
+  request: func(req: request) -> response
+}
+
+interface net {
+  type bytes = list<u8>
+
+  connect: func(host: string, port: u16) -> u32
+  close: func(handle: u32)
+  read: func(handle: u32, max-len: u32) -> bytes
+  write: func(handle: u32, data: bytes) -> u32
+}
