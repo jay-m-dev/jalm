@@ -18,6 +18,7 @@ An LLM/agent can use the specs in this repository as a deterministic contract fo
 - `STRUCTURED_CONCURRENCY_V0.md`: Defines scoped tasks and cancellation rules so agents avoid leaks or detached tasks.
 - `MODULE_SYSTEM_V0.md`: Defines layout and import/visibility rules for deterministic project structure.
 - `CODEGEN_V0.md`: Documents the current WASM codegen scope and limitations.
+- `RUNTIME_V0.md`: Documents the minimal WASM runtime ABI and memory model.
 
 ## Why “AI Agent Friendly” Matters
 
