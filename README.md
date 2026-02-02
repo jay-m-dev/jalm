@@ -45,3 +45,7 @@ cd jalmc
 cargo run -p jalmt -- fmt ../examples/hello.jalm
 cargo run -p jalmt -- check ../examples/bad_types.jalm
 ```
+
+## License
+
+Apache-2.0. See `LICENSE`.
