@@ -1,9 +1,9 @@
 [package]
-name = "jalmt"
+name = "jalm_formatter"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
 jalm_parser = { path = "../jalm_parser" }
-jalm_formatter = { path = "../jalm_formatter" }
-serde_json = "1.0"
+jalm_syntax = { path = "../jalm_syntax" }
+rowan = "0.15"

@@ -4,6 +4,7 @@ members = [
   "crates/jalm_syntax",
   "crates/jalm_parser",
   "crates/jalm_ast",
+  "crates/jalm_formatter",
   "crates/jalm_tests",
   "crates/jalmt",
 ]

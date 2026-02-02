@@ -1,5 +1,6 @@
 use jalm_tests::{diagnostics_json, round_trip};
 use insta::{assert_json_snapshot, assert_snapshot};
+use jalm_formatter::format_source;
 
 #[test]
 fn round_trip_snapshot_basic() {
@@ -128,6 +129,32 @@ fn diagnostics_missing_rbrace() {
       }
     }
   ]
+}
+"###);
+}
+
+#[test]
+fn formatter_idempotent() {
+    let src = "fn f(a:i64)->i64{let x=1+2;return x;}";
+    let once = format_source(src).expect("format once");
+    let twice = format_source(&once).expect("format twice");
+    assert_eq!(once, twice);
+}
+
+#[test]
+fn formatter_normalizes_spacing() {
+    let src = "fn f(a:i64)->i64{if true{foo(1+2).bar}else{match x{1=>2,_=>3,}}}";
+    let formatted = format_source(src).expect("format");
+    assert_snapshot!(formatted, @r###"
+fn f(a: i64) -> i64 {
+  if true {
+    foo(1 + 2).bar
+  } else {
+    match x {
+      1 => 2,
+      _ => 3,
+    }
+  }
 }
 "###);
 }
