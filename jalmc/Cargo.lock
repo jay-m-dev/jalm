@@ -153,8 +153,19 @@ dependencies = [
  "jalm_formatter",
  "jalm_parser",
  "jalm_syntax",
+ "jalm_typecheck",
  "rowan",
  "serde_json",
+]
+
+[[package]]
+name = "jalm_typecheck"
+version = "0.1.0"
+dependencies = [
+ "jalm_parser",
+ "jalm_syntax",
+ "rowan",
+ "serde",
 ]
 
 [[package]]
