@@ -7,6 +7,7 @@ members = [
   "crates/jalm_formatter",
   "crates/jalm_typecheck",
   "crates/jalm_effectcheck",
+  "crates/jalm_codegen",
   "crates/jalm_tests",
   "crates/jalmt",
 ]

@@ -1,0 +1,12 @@
+[package]
+name = "jalm_codegen"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+jalm_parser = { path = "../jalm_parser" }
+jalm_syntax = { path = "../jalm_syntax" }
+wasm-encoder = "0.38"
+
+[dev-dependencies]
+wasmtime = "17.0"
