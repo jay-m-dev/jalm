@@ -1,0 +1,14 @@
+[package]
+name = "jalm_tests"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+jalm_parser = { path = "../jalm_parser" }
+jalm_syntax = { path = "../jalm_syntax" }
+rowan = "0.15"
+insta = { version = "1.34", features = ["json"] }
+serde_json = "1.0"
+
+[dev-dependencies]
+insta = { version = "1.34", features = ["json"] }

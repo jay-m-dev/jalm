@@ -1,0 +1,11 @@
+[package]
+name = "jalm_parser"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+jalm_syntax = { path = "../jalm_syntax" }
+rowan = "0.15"
+logos = "0.14"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"

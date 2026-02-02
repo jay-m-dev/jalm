@@ -1,0 +1,8 @@
+[package]
+name = "jalm_ast"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+jalm_syntax = { path = "../jalm_syntax" }
+rowan = "0.15"
