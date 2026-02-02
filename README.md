@@ -28,3 +28,20 @@ JaLM is designed so a model can:
 - Organize modules in a deterministic, file-based layout.
 
 The result is a language where “what the model writes” is more likely to compile, be safe, and be easy to verify.
+
+## Examples
+
+Example programs live in `examples/`:
+
+- `examples/hello.jalm`
+- `examples/struct_enum.jalm`
+- `examples/match_if.jalm`
+- `examples/bad_types.jalm` (intentional type errors)
+
+Try them with `jalmt`:
+
+```bash
+cd jalmc
+cargo run -p jalmt -- fmt ../examples/hello.jalm
+cargo run -p jalmt -- check ../examples/bad_types.jalm
+```
